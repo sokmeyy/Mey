@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Donuts - Donut Delight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Donut Delight</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Our Donuts</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Shopping Cart <span id="cart-icon">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Donuts</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/glazed-donut.jpg" alt="Classic Glazed Donut">
+                <div class="product-details">
+                    <h3>Classic Glazed Donut</h3>
+                    <p>A timeless treat with a sweet glaze.</p>
+                    <button onclick="addToCart('Classic Glazed Donut', 2.50)">Add to Cart - $2.50</button>
+                    <button onclick="openModal('Our Classic Glazed Donut is made fresh daily. A perfect balance of sweetness!')">More Details</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/chocolate-donut.jpg" alt="Chocolate Donut">
+                <div class="product-details">
+                    <h3>Chocolate Donut</h3>
+                    <p>Rich and delicious chocolate-coated donut.</p>
+                    <button onclick="addToCart('Chocolate Donut', 3.00)">Add to Cart - $3.00</button>
+                    <button onclick="openModal('Our Chocolate Donut is a chocolate lovers dream coated with premium cocoa.')">More Details</button>
+                </div>
+            </div>
+            <div class="product">
+              <img src="images/sprinkle-donut.jpg" alt="Sprinkle Donut">
+              <div class="product-details">
+                <h3>Sprinkle Donut</h3>
+                <p>A fun donut covered in colorful sprinkles.</p>
+                <button onclick="addToCart('Sprinkle Donut', 2.75)">Add to Cart - $2.75</button>
+                <button onclick="openModal('Sprinkle Donut - Ingredients: Flour, sprinkles, sugar...')">More Details</button>
+              </div>
+            </div>
+        
+            <div class="product">
+              <img src="images/jelly-donut.jpg" alt="Jelly Donut">
+              <div class="product-details">
+                <h3>Jelly Donut</h3>
+                <p>Soft donut filled with sweet jelly.</p>
+                <button onclick="addToCart('Jelly Donut', 3.5)">Add to Cart - $3.50</button>
+                <button onclick="openModal('Jelly Donut - Ingredients: Flour, jelly, sugar...')">More Details</button>
+              </div>
+            </div>
+          
+          <div class="product">
+            <div class="product-details">
+              <img src="images/strawberry-donut.jpg" alt="Strawberry Donut">
+              <div>
+                <h3>Strawberry Frosted Donut</h3>
+                <p>Sweet strawberry icing with rainbow sprinkles.</p>
+                <button onclick="addToCart('Strawberry Frosted Donut', 3.5)">Add to Cart - $3.50</button>
+                <button onclick="openModal('Strawberry Frosted Donut - Ingredients: Flour, sugar, strawberries...')">More Details</button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="product">
+            <div class="product-details">
+              <img src="images/cinnamon-donut.jpg" alt="Cinnamon Donut">
+              <div>
+                <h3>Cinnamon Sugar Donut</h3>
+                <p>Deliciously rolled in cinnamon and sugar.</p>
+                <button onclick="addToCart('Cinnamon Sugar Donut', 3)">Add to Cart - $3.00</button>
+                <button onclick="openModal('Cinnamon Sugar Donut - Ingredients: Cinnamon, sugar, flour...')">More Details</button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="product">
+            <div class="product-details">
+              <img src="images/blueberry-donut.jpg" alt="Blueberry Donut">
+              <div>
+                <h3>Blueberry Donut</h3>
+                <p>Fresh blueberries with a light glaze.</p>
+                <button onclick="addToCart('Blueberry Donut', 3.2)">Add to Cart - $3.20</button>
+                <button onclick="openModal('Blueberry Donut - Ingredients: Flour, sugar, blueberries...')">More Details</button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="product">
+            <div class="product-details">
+              <img src="images/boston-creme-donut.jpg" alt="Boston Creme Donut">
+              <div>
+                <h3>Boston Creme Donut</h3>
+                <p>Cream-filled with a chocolate glaze.</p>
+                <button onclick="addToCart('Boston Creme Donut', 4)">Add to Cart - $4.00</button>
+                <button onclick="openModal('Boston Creme Donut - Ingredients: Flour, chocolate, custard...')">More Details</button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="product">
+            <div class="product-details">
+              <img src="images/maple-bacon-donut.jpg" alt="Maple Bacon Donut">
+              <div>
+                <h3>Maple Bacon Donut</h3>
+                <p>A sweet and savory combination of maple and bacon.</p>
+                <button onclick="addToCart('Maple Bacon Donut', 4.5)">Add to Cart - $4.50</button>
+                <button onclick="openModal('Maple Bacon Donut - Ingredients: Maple syrup, bacon, flour...')">More Details</button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="product">
+            <div class="product-details">
+              <img src="images/raspberry-filled-donut.jpg" alt="Raspberry Filled Donut">
+              <div>
+                <h3>Raspberry Filled Donut</h3>
+                <p>Light and fluffy with a raspberry filling.</p>
+                <button onclick="addToCart('Raspberry Filled Donut', 3.8)">Add to Cart - $3.80</button>
+                <button onclick="openModal('Raspberry Filled Donut - Ingredients: Flour, raspberries, sugar...')">More Details</button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="product">
+            <div class="product-details">
+              <img src="images/hero-donuts.jpg" alt="hero-donuts">
+              <div>
+                <h3>Hero Donut</h3>
+                <p>Light and fluffy with a hero filling.</p>
+                <button onclick="addToCart('Hero Donut', 15.8)">Add to Cart - $15.80</button>
+                <button onclick="openModal('Hero Donut - Ingredients: Flour, raspberries, sugar...')">More Details</button>
+              </div>
+            </div>
+          </div>
+            <!-- Add more product divs here following the same structure -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Donut Delight</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

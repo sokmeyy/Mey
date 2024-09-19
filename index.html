@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Delight - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Donut Delight</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Our Donuts</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Shopping Cart <span id="cart-icon">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/glazed-donut.jpg" alt="Classic Glazed Donut" class="slider-image">
+                    <div class="slide-content">
+                        <h3>Classic Glazed Donut</h3>
+                        <p>A timeless treat with a sweet glaze.</p>
+                        <button onclick="addToCart('Classic Glazed Donut', 2.50)">Add to Cart - $2.50</button>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/chocolate-donut.jpg" alt="Chocolate Donut" class="slider-image">
+                    <div class="slide-content">
+                        <h3>Chocolate Donut</h3>
+                        <p>Rich and delicious chocolate-coated donut.</p>
+                        <button onclick="addToCart('Chocolate Donut', 3.00)">Add to Cart - $3.00</button>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/sprinkle-donut.jpg" alt="Sprinkle Donut" class="slider-image">
+                    <div class="slide-content">
+                        <h3>Sprinkle Donut</h3>
+                        <p>A fun donut covered in colorful sprinkles.</p>
+                        <button onclick="addToCart('Sprinkle Donut', 2.75)">Add to Cart - $2.75</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slider-button prev">&lt;</button>
+            <button class="slider-button next">&gt;</button>
+        </div>
+
+        <section class="welcome">
+            <h2>Welcome to Donut Delight</h2>
+            <p>Your favorite spot for freshly made donuts. Check out our featured products above or visit our full selection!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; OWNER Mr.Meng Sokmey </p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
